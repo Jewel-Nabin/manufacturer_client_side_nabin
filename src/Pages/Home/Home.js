@@ -1,4 +1,5 @@
 import React from 'react';
+import Advantages from './Advantages';
 import Banner from './Banner';
 import Parts from './Parts';
 import Testimonials from './Testimonials';
@@ -11,6 +12,7 @@ const Home = () => {
             <Parts />
             <TrustedBy />
             <Testimonials />
+            <Advantages />
         </div>
     );
 };

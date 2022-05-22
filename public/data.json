@@ -2,48 +2,48 @@
     {
         "img": "https://i.ibb.co/K0Xc2yM/generator.jpg",
         "name": "STP Generator Platinum",
-        "minQuantity": "30",
-        "avQuantity": "100",
+        "minQuantity": "120",
+        "avQuantity": "800",
         "description": "Many philosophical debates that began in ancient times are still debated today. In one general sense, philosophy is associated with wisdom, intellectual culture and a search for knowledge.",
         "price": "379,00"
     },
     {
         "img": "https://i.ibb.co/9YLWDGV/specter.jpg",
         "name": "Fantastic 12-Stroke Engine With A Power of 1991 hp",
-        "minQuantity": "30",
-        "avQuantity": "100",
+        "minQuantity": "100",
+        "avQuantity": "790",
         "description": "Many philosophical debates that began in ancient times are still debated today. In one general sense, philosophy is associated with wisdom, intellectual culture and a search for knowledge.",
         "price": "2579,00"
     },
     {
         "img": "https://i.ibb.co/86CT1X8/air-suspension.jpg",
         "name": "Air Suspension For Brandix Car",
-        "minQuantity": "30",
-        "avQuantity": "90",
+        "minQuantity": "180",
+        "avQuantity": "990",
         "description": "Many philosophical debates that began in ancient times are still debated today. In one general sense, philosophy is associated with wisdom, intellectual culture and a search for knowledge.",
         "price": "162,00"
     },
     {
         "img": "https://i.ibb.co/QdRmXqx/clutch-disc.jpg",
         "name": "Brandix Clutch Discs Z175",
-        "minQuantity": "30",
-        "avQuantity": "100",
+        "minQuantity": "120",
+        "avQuantity": "500",
         "description": "Many philosophical debates that began in ancient times are still debated today. In one general sense, philosophy is associated with wisdom, intellectual culture and a search for knowledge.",
         "price": "345,00"
     },
     {
         "img": "https://i.ibb.co/cYnrDNw/engine.jpg",
         "name": "Brandix Engine Block Z4",
-        "minQuantity": "30",
-        "avQuantity": "100",
+        "minQuantity": "200",
+        "avQuantity": "1000",
         "description": "Many philosophical debates that began in ancient times are still debated today. In one general sense, philosophy is associated with wisdom, intellectual culture and a search for knowledge.",
         "price": "19,00 – $666,99"
     },
     {
         "img": "https://i.ibb.co/NyVTnvW/wheel-disk.jpg",
         "name": "Glossy Gray 19″ Aluminium Wheel AR-19",
-        "minQuantity": "30",
-        "avQuantity": "100",
+        "minQuantity": "300",
+        "avQuantity": "900",
         "description": "Many philosophical debates that began in ancient times are still debated today. In one general sense, philosophy is associated with wisdom, intellectual culture and a search for knowledge.",
         "price": "589,00"
     }
