@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import useParts from '../../hooks/useParts';
-import Part from '../Home/Part';
+import Part from './Part';
 
-const Purchase = () => {
+const Parts = () => {
     const [parts, setParts] = useParts();
     return (
         <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
@@ -16,4 +16,4 @@ const Purchase = () => {
     );
 };
 
-export default Purchase;
+export default Parts;
