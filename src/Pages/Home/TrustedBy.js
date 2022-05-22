@@ -8,7 +8,7 @@ const TrustedBy = () => {
     return (
         <div className='my-20 mx-5 bg-accent'>
             <div className='text-center'>
-                <h1 className='text-4xl'><span className='text-secondary'>Trusted</span> by who!</h1>
+                <h1 className='text-4xl'><span className='text-secondary'>Trusted</span> by who we are!</h1>
                 <p className='text-2xl'>to understand and expectations of users</p>
             </div>
             <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-10'>

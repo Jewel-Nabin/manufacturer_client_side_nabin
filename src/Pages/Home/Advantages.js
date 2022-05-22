@@ -5,7 +5,7 @@ import reviews from '../../assets/images/reviews.png';
 
 const Advantages = () => {
     return (
-        <div className='my-20 mx-5'>
+        <div className='my-20 mx-5 bg-accent p-10'>
             <h1 className='text-4xl text-center mb-10'>Why Choose <span className='font-bold'>part<span className='text-secondary'>Ex</span></span> Products?</h1>
             <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5'>
                 <div class="card lg:max-w-lg bg-base-100 shadow-xl">

@@ -7,7 +7,7 @@ const Footer = () => {
             <footer class="footer footer-center p-10  bg-neutral rounded text-white">
                 <div>
                     <h1 className='text-2xl'>part<span className='text-secondary text-3xl font-bold'>Ex</span></h1>
-                    <small><p>Copyright © 2022 - All right reserved by ACME Industries Ltd</p></small>
+                    <small><p>Copyright © 2022 - All right reserved by partEx Ltd</p></small>
                 </div>
                 <div class="grid grid-flow-col gap-4">
                     <a class="link link-hover">About us</a>

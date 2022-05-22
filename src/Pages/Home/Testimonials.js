@@ -10,7 +10,7 @@ import avatar3 from '../../assets/images/avatar3.png';
 export default class Testimonials extends Component {
     render() {
         return (
-            <div className="my-20 mx-5">
+            <div className="my-20 mx-5 bg-accent">
                 <h1 className="ml-20 text-4xl">Our Clients <span className="text-secondary">Love Us!</span></h1>
                 <Carousel
                     showArrows={true}
