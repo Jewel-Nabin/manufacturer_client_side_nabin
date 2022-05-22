@@ -7,13 +7,13 @@ const Navbar = () => {
         <li><Link to="/purchase">Purchase</Link></li>
     </>
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-neutral text-white">
             <div className="navbar-start ml-10">
                 <div className="dropdown">
-                    <label tabIndex="0" className="btn btn-ghost lg:hidden">
+                    <label tabIndex="0" className="btn btn-ghost lg:hidden bg-neutral">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
-                    <ul tabIndex="0" className="menu menu-compact dropdown-content shadow bg-base-100 rounded-box lg:max-w-lg">
+                    <ul tabIndex="0" className="menu menu-compact dropdown-content shadow bg-neutral rounded-box lg:max-w-lg">
                         {menuItems}
                     </ul>
                 </div>
@@ -24,11 +24,11 @@ const Navbar = () => {
                 </div>
             </div>
             <div>
-                <a className="btn btn-ghost normal-case text-xl navbar-center">partEx</a>
+                <h1 className='text-2xl'>part<span className='text-secondary text-3xl font-bold'>Ex</span></h1>
             </div>
             <div class="navbar-end mr-10">
-                <button class="btn btn-outline btn-accent btn-sm mr-1">Sign up</button>
-                <button class="btn btn-outline btn-accent btn-sm ml-1">Log in</button>
+                <button class="btn btn-outline btn-sm mr-1 text-white">Sign up</button>
+                <button class="btn btn-outline btn-sm ml-1 text-white">Log in</button>
             </div>
         </div>
     );
