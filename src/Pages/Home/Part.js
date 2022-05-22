@@ -9,13 +9,13 @@ const Part = ({ part }) => {
                     <img src={img} alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
-                    <h2 class="card-title">{name}</h2>
+                    <h2 class="card-title text-secondary">{name}</h2>
                     <p>{description}</p>
                     <p>{minQuantity}</p>
                     <p>{avQuantity}</p>
                     <p>{price}</p>
                     <div class="card-actions">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button class="btn btn-secondary text-white">Buy Now</button>
                     </div>
                 </div>
             </div>

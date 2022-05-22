@@ -9,12 +9,12 @@ const Banner = () => {
                 backgroundSize: 'cover'
             }}
                 class="hero min-h-screen">
-                <div class="hero-content text-center text-neutral-content">
+                <div class="hero-content text-center text-neutral-content text-white">
                     <div class="max-w-md">
                         <h1 class="mb-5 text-5xl font-bold">A new Level of Comfort
                             Tested for your Safety</h1>
                         <p class="mb-5">This is our most comprehensive vehicle treatment.</p>
-                        <button class="btn btn-primary uppercase">Buy Now</button>
+                        <button class="btn btn-secondary uppercase">Buy Now</button>
                     </div>
                 </div>
             </div>

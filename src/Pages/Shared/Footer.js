@@ -4,7 +4,7 @@ import { FiInstagram } from "react-icons/fi";
 const Footer = () => {
     return (
         <div>
-            <footer class="footer footer-center p-10  bg-neutral text-base-content rounded text-white">
+            <footer class="footer footer-center p-10  bg-neutral rounded text-white">
                 <div>
                     <h1 className='text-2xl'>part<span className='text-secondary text-3xl font-bold'>Ex</span></h1>
                     <small><p>Copyright © 2022 - All right reserved by ACME Industries Ltd</p></small>
