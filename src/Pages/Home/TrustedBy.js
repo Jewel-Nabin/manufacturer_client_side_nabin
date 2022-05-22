@@ -6,7 +6,7 @@ import favicon4 from '../../assets/images/favicon4.png';
 
 const TrustedBy = () => {
     return (
-        <div className='my-20 mx-5'>
+        <div className='my-20 mx-5 bg-accent'>
             <div className='text-center'>
                 <h1 className='text-4xl'><span className='text-secondary'>Trusted</span> by who!</h1>
                 <p className='text-2xl'>to understand and expectations of users</p>

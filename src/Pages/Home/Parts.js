@@ -5,7 +5,7 @@ import Part from './Part';
 const Parts = () => {
     const [parts, setParts] = useParts();
     return (
-        <div className='my-20 mx-5'>
+        <div className='my-20 mx-5 bg-accent'>
             <div className='text-center'>
                 <h1 className='text-4xl'>part<span className='text-secondary text-3xl font-bold'>Ex</span> Products</h1>
                 <p className='text-2xl text-primary'>select your parts</p>
