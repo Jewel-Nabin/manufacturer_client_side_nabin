@@ -5,6 +5,7 @@ const Navbar = () => {
     const menuItems = <>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/purchase">Purchase</Link></li>
+        <li><Link to="/blogs">Blogs</Link></li>
     </>
     return (
         <div className="navbar bg-neutral text-white">
@@ -28,7 +29,8 @@ const Navbar = () => {
             </div>
             <div class="navbar-end mr-10">
                 <button class="btn btn-outline btn-sm mr-1 text-white">Sign up</button>
-                <button class="btn btn-outline btn-sm ml-1 text-white">Log in</button>
+                <button class="btn btn-outline btn-sm ml-1 text-white"><Link to="/login">Log in</Link>
+                </button>
             </div>
         </div>
     );
