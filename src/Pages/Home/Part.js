@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Part = ({ part }) => {
+const Part = ({ part, setProduct }) => {
     const { _id, name, img, minQuantity, avQuantity, price, description } = part;
     return (
         <div>
@@ -15,16 +15,14 @@ const Part = ({ part }) => {
                     <p> <small>Available Quantity:</small> {avQuantity}</p>
                     <p> <small>Price:</small> ${price}</p>
                     <div class="card-actions">
-                        <button class="btn btn-sm btn-secondary text-white">Buy Now</button>
+                        <label
+                            for="purchasing-modal"
+                            onClick={() => setProduct(part)}
+                            class="btn btn-sm btn-secondary text-white">open modal
+                        </label>
                     </div>
                 </div>
             </div>
-            {/* <img src={img} alt="" />
-            <h1>{name}</h1>
-            <h1>{minQuantity}</h1>
-            <h1>{avQuantity}</h1>
-            <h1>{description}</h1>
-            <h1>{price}</h1> */}
         </div>
     );
 };

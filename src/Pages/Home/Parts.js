@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import useParts from '../../hooks/useParts';
 import Part from './Part';
 
