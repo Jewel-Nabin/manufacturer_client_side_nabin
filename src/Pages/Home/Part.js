@@ -17,7 +17,7 @@ const Part = ({ part, setProduct }) => {
                     <div className="card-actions">
                         <label
                             key={part._id}
-                            for="purchasing-modal"
+                            htmlFor="purchasing-modal"
                             onClick={() => setProduct(part)}
                             className="btn btn-sm btn-secondary text-white">open modal
                         </label>

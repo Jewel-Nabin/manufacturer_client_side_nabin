@@ -4,14 +4,14 @@ import MyProfile from './MyProfile';
 import { useCreateUserWithEmailAndPassword, useSignInWithGoogle, useUpdateProfile } from 'react-firebase-hooks/auth';
 import { useForm } from "react-hook-form";
 import Loading from '../Shared/Loading';
-import { Link, useNavigate } from 'react-router-dom';    
+import { Link, useNavigate } from 'react-router-dom';
 
 const SignUp = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
 
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle
         (auth);
-    
+
     const [updateProfile, updating, updateError] = useUpdateProfile(auth);
 
     const [
@@ -59,14 +59,14 @@ const SignUp = () => {
                     <div className="divider">OR</div>
                     <form className='' onSubmit={handleSubmit(onSubmit)}>
 
-                        <div class="form-control w-full">
-                            <label class="label">
-                                <span class="label-text">Name</span>
+                        <div className="form-control w-full">
+                            <label className="label">
+                                <span className="label-text">Name</span>
                             </label>
                             <input
                                 type="text"
                                 placeholder="Your name"
-                                class="input input-bordered w-full"
+                                className="input input-bordered w-full"
                                 {...register("name", {
                                     required: {
                                         value: true,
@@ -78,14 +78,14 @@ const SignUp = () => {
                                 {errors.name?.type === 'required' && <span className="label-text-alt text-red-500">{errors.name.message}</span>}
                             </label>
                         </div>
-                        <div class="form-control w-full">
-                            <label class="label">
-                                <span class="label-text">Email</span>
+                        <div className="form-control w-full">
+                            <label className="label">
+                                <span className="label-text">Email</span>
                             </label>
                             <input
                                 type="email"
                                 placeholder="Your email"
-                                class="input input-bordered w-full"
+                                className="input input-bordered w-full"
                                 {...register("email", {
                                     required: {
                                         value: true,
@@ -104,14 +104,14 @@ const SignUp = () => {
                             </label>
                         </div>
 
-                        <div class="form-control w-full">
-                            <label class="label">
-                                <span class="label-text">Password</span>
+                        <div className="form-control w-full">
+                            <label className="label">
+                                <span className="label-text">Password</span>
                             </label>
                             <input
                                 type="password"
                                 placeholder="Your password"
-                                class="input input-bordered w-full"
+                                className="input input-bordered w-full"
                                 {...register("password", {
                                     required: {
                                         value: true,

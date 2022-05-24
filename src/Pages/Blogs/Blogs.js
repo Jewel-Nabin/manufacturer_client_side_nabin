@@ -4,7 +4,7 @@ const Blogs = () => {
     return (
         <div className='m-10'>
             <p className='text-4xl text-center py-10'>Questions and Answers</p>
-            <div tabindex="0" className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+            <div tabIndex="0" className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
                 <div className="collapse-title text-xl font-medium">
                     1. How will we improve the performance of a React Application?
                 </div>
@@ -23,7 +23,7 @@ const Blogs = () => {
                     </p>
                 </div>
             </div>
-            <div tabindex="0" className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+            <div tabIndex="0" className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
                 <div className="collapse-title text-xl font-medium">
                     2. What are the different ways to manage a state in a React application?
                 </div>
@@ -59,7 +59,7 @@ const Blogs = () => {
                     </p>
                 </div>
             </div>
-            <div tabindex="0" className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+            <div tabIndex="0" className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
                 <div className="collapse-title text-xl font-medium">
                     3. How does prototypical inheritance work?
                 </div>
@@ -71,7 +71,7 @@ const Blogs = () => {
                         While prototypal inheritance seems clumsy at first, when understanding it we could enjoy its simplicity and possibilities.</p>
                 </div>
             </div>
-            <div tabindex="0" className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+            <div tabIndex="0" className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
                 <div className="collapse-title text-xl font-medium">
                     4. What is a unit test? Why should write unit tests?
                 </div>
@@ -88,7 +88,7 @@ const Blogs = () => {
                     </p>
                 </div>
             </div>
-            <div tabindex="0" className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+            <div tabIndex="0" className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
                 <div className="collapse-title text-xl font-medium">
                     5. Why should we not update the state directly?
                 </div>

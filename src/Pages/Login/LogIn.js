@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import auth from '../../firebase.init';
 import MyProfile from './MyProfile';
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
@@ -26,12 +26,14 @@ const LogIn = () => {
     const location = useLocation();
     const from = location.state?.from?.pathname || "/";
 
+    useEffect(() => {
+        if (user || gUser) {
+            navigate(from, { replace: true });
+        }
+    }, [user, gUser, from, navigate])
+
     if (loading || gLoading) {
         return <Loading />
-    }
-
-    if (user || gUser) {
-        navigate(from, { replace: true });
     }
 
 
@@ -59,14 +61,14 @@ const LogIn = () => {
                     <div className="divider">OR</div>
                     <form className='' onSubmit={handleSubmit(onSubmit)}>
 
-                        <div class="form-control w-full">
-                            <label class="label">
-                                <span class="label-text">Email</span>
+                        <div className="form-control w-full">
+                            <label className="label">
+                                <span className="label-text">Email</span>
                             </label>
                             <input
                                 type="email"
                                 placeholder="Your email"
-                                class="input input-bordered w-full"
+                                className="input input-bordered w-full"
                                 {...register("email", {
                                     required: {
                                         value: true,
@@ -85,14 +87,14 @@ const LogIn = () => {
                             </label>
                         </div>
 
-                        <div class="form-control w-full">
-                            <label class="label">
-                                <span class="label-text">Password</span>
+                        <div className="form-control w-full">
+                            <label className="label">
+                                <span className="label-text">Password</span>
                             </label>
                             <input
                                 type="password"
                                 placeholder="Your password"
-                                class="input input-bordered w-full"
+                                className="input input-bordered w-full"
                                 {...register("password", {
                                     required: {
                                         value: true,
