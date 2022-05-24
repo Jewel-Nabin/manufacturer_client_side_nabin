@@ -11,22 +11,22 @@ import mongodb from '../../assets/images/svg/mongodb.svg';
 const MyProfile = () => {
     return (
         <div>
-            <div class="hero min-h-screen bg-base-200">
-                <div class="hero-content flex-col lg:flex-row">
+            <div className="hero min-h-screen bg-base-200">
+                <div className="hero-content flex-col lg:flex-row">
                     <div className='text-center'>
-                        <img src={myProfile} class="max-w-sm rounded-lg shadow-2xl mx-auto" alt='' />
+                        <img src={myProfile} className="max-w-sm rounded-lg shadow-2xl mx-auto" alt='' />
                         <h1 className='p-1'>Mohammed Jewel (Nabin)</h1>
                         <h2 className='p-1'>Email: jewelnabin@gmail.com</h2>
                         <p className='p-1'>My academic background is BBA (final year) at National University.</p>
                         <p className='p-1'>Chattogram, Bangladesh</p>
                     </div>
                     <div>
-                        <div class="footer footer-center p-10 bg-base-200 text-base-content rounded">
-                            <div class="grid grid-flow-col gap-4">
+                        <div className="footer footer-center p-10 bg-base-200 text-base-content rounded">
+                            <div className="grid grid-flow-col gap-4">
                             </div>
                             <div>
                                 <p className='text-2xl'>The following technologies's skill I have</p>
-                                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                                <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
                                     <img className='object-scale-down h-8 w-8' src={nodeJS} alt="" />
                                     <img className='object-scale-down h-8 w-8' src={api} alt="" />
                                     <img className='object-scale-down h-8 w-8' src={js} alt="" />

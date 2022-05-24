@@ -8,13 +8,13 @@ const Banner = () => {
                 background: `url(${carBanner})`,
                 backgroundSize: 'cover'
             }}
-                class="hero min-h-screen">
-                <div class="hero-content text-center text-neutral-content text-white">
-                    <div class="max-w-md">
-                        <h1 class="mb-5 text-5xl font-bold">A new Level of Comfort
+                className="hero min-h-screen">
+                <div className="hero-content text-center text-neutral-content text-white">
+                    <div className="max-w-md">
+                        <h1 className="mb-5 text-5xl font-bold">A new Level of Comfort
                             Tested for your Safety</h1>
-                        <p class="mb-5">This is our most comprehensive vehicle treatment.</p>
-                        <button class="btn btn-secondary uppercase">Buy Now</button>
+                        <p className="mb-5">This is our most comprehensive vehicle treatment.</p>
+                        <button className="btn btn-secondary uppercase">Buy Now</button>
                     </div>
                 </div>
             </div>

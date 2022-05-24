@@ -27,9 +27,9 @@ const Navbar = () => {
             <div>
                 <h1 className='text-2xl'>part<span className='text-secondary text-3xl font-bold'>Ex</span></h1>
             </div>
-            <div class="navbar-end mr-10">
-                <button class="btn btn-outline btn-sm mr-1 text-white">Sign up</button>
-                <button class="btn btn-outline btn-sm ml-1 text-white"><Link to="/login">Log in</Link>
+            <div className="navbar-end mr-10">
+                <button className="btn btn-outline btn-sm mr-1 text-white">Sign up</button>
+                <button className="btn btn-outline btn-sm ml-1 text-white"><Link to="/login">Log in</Link>
                 </button>
             </div>
         </div>

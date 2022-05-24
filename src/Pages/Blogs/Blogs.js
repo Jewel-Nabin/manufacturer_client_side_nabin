@@ -4,11 +4,11 @@ const Blogs = () => {
     return (
         <div className='m-10'>
             <p className='text-4xl text-center py-10'>Questions and Answers</p>
-            <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
-                <div class="collapse-title text-xl font-medium">
+            <div tabindex="0" className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+                <div className="collapse-title text-xl font-medium">
                     1. How will we improve the performance of a React Application?
                 </div>
-                <div class="collapse-content">
+                <div className="collapse-content">
                     <p>React is a JavaScript library for building user interfaces. React ships with several ways to minimize the number of costly DOM operations required to update the UI. For many applications, using React will lead to a fast user interface without doing much work to specifically optimize for performance. Nevertheless, there are several ways we can speed up our React application. <br /><br />
                         <b>To improve the performance of a React Application, we have to follow the following teqniques:</b>
                         <br />
@@ -23,14 +23,14 @@ const Blogs = () => {
                     </p>
                 </div>
             </div>
-            <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
-                <div class="collapse-title text-xl font-medium">
+            <div tabindex="0" className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+                <div className="collapse-title text-xl font-medium">
                     2. What are the different ways to manage a state in a React application?
                 </div>
-                <div class="collapse-content">
+                <div className="collapse-content">
                     <p>
                         There are severel different ways to manage a state in a React application. The following I focused on only four way, how to manage React State.
-                        <span className='font-bold'>The Four Kinds of React State are: </span> 
+                        <span className='font-bold'>The Four Kinds of React State are: </span>
                         <br /><br />
                         <ol>
                             <li>1. Local state</li>
@@ -59,11 +59,11 @@ const Blogs = () => {
                     </p>
                 </div>
             </div>
-            <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
-                <div class="collapse-title text-xl font-medium">
+            <div tabindex="0" className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+                <div className="collapse-title text-xl font-medium">
                     3. How does prototypical inheritance work?
                 </div>
-                <div class="collapse-content">
+                <div className="collapse-content">
                     <p>In JavaScript, objects inherit properties from other objects — the prototypes. That's the idea of prototypal inheritance.
 
                         JavaScript looks for inherited properties in the prototype of the object, but also in the prototype of the prototype, and so on in the chain of prototypes.
@@ -71,11 +71,11 @@ const Blogs = () => {
                         While prototypal inheritance seems clumsy at first, when understanding it we could enjoy its simplicity and possibilities.</p>
                 </div>
             </div>
-            <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
-                <div class="collapse-title text-xl font-medium">
+            <div tabindex="0" className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+                <div className="collapse-title text-xl font-medium">
                     4. What is a unit test? Why should write unit tests?
                 </div>
-                <div class="collapse-content">
+                <div className="collapse-content">
                     <p> <b>UNIT TESTING</b> is a type of software testing where individual units or components of a software are tested. The purpose is to validate that each unit of the software code performs as expected. Unit Testing is done during the development (coding phase) of an application by the developers. Unit Tests isolate a section of code and verify its correctness. A unit may be an individual function, method, procedure, module, or object.</p><br />
                     <p> <b>Unit Testing</b> is important because software developers sometimes try saving time doing minimal unit testing. <br /><br />
                         <b>Here, are the key reasons to perform unit testing:</b>
@@ -88,11 +88,11 @@ const Blogs = () => {
                     </p>
                 </div>
             </div>
-            <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
-                <div class="collapse-title text-xl font-medium">
+            <div tabindex="0" className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+                <div className="collapse-title text-xl font-medium">
                     5. Why should we not update the state directly?
                 </div>
-                <div class="collapse-content">
+                <div className="collapse-content">
                     <p>
                         <b>We should never update the state directly because of the following reasons:</b>
                         <br />
