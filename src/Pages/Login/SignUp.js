@@ -1,64 +1,83 @@
 import React from 'react';
 import auth from '../../firebase.init';
 import MyProfile from './MyProfile';
-import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSignInWithGoogle, useUpdateProfile } from 'react-firebase-hooks/auth';
 import { useForm } from "react-hook-form";
 import Loading from '../Shared/Loading';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';    
 
-
-
-const LogIn = () => {
+const SignUp = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
 
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle
-    (auth);
+        (auth);
     
+    const [updateProfile, updating, updateError] = useUpdateProfile(auth);
+
     const [
-        signInWithEmailAndPassword,
+        createUserWithEmailAndPassword,
         user,
         loading,
         error,
-    ] = useSignInWithEmailAndPassword(auth);
+    ] = useCreateUserWithEmailAndPassword(auth);
 
-    let signInError;
     const navigate = useNavigate();
-    const location = useLocation();
-    const from = location.state?.from?.pathname || "/";
 
-    if (loading || gLoading) {
+    if (loading || gLoading || updating) {
         return <Loading />
     }
 
     if (user || gUser) {
-        navigate(from, { replace: true });
+        console.log(user || gUser);
     }
 
+    let signInError;
 
-    if (error || gError) {
-        signInError = <p className='text-red-500'><small>{error?.message || gError?.message}</small></p>
+    if (error || gError || updateError) {
+        signInError = <p className='text-red-500'><small>{error?.message || gError?.message || updateError?.message}</small></p>
     }
 
-    const onSubmit = data => {
-        signInWithEmailAndPassword(data.email, data.password);
+    const onSubmit = async data => {
+        await createUserWithEmailAndPassword(data.email, data.password);
+        await updateProfile({ displayName: data.name });
+        console.log('update done');
+        navigate('/purchase');
+
     }
-
-
     return (
         <div className='flex min-h-screen justify-center items-center w-full'>
             {/* <MyProfile /> */}
             <div className="card min-h-screen bg-base-100 shadow-xl">
                 <div className="card-body">
-                    <h1 className='text-2xl text-center font-bold'>Log in to part<span className='text-secondary text-3xl font-bold'>Ex</span></h1>
-                    <p className='text-center'>Welcome back! Login with your data that you entered during registration</p>
+                    <h1 className='text-2xl text-center font-bold'>Sign up to part<span className='text-secondary text-3xl font-bold'>Ex</span></h1>
+                    <p className='text-center'>Hey, Enter your details to get register with us</p>
                     <button
                         onClick={() => signInWithGoogle()}
-                        className="btn btn-outline bg-neutral hover:bg-secondary text-white">Login with Google
+                        className="btn btn-outline bg-neutral hover:bg-secondary text-white">Signup with Google
                     </button>
-                    <button className="btn btn-outline bg-neutral hover:bg-secondary text-white">Login with Github</button>
+                    <button className="btn btn-outline bg-neutral hover:bg-secondary text-white">Signup with Github</button>
                     <div className="divider">OR</div>
                     <form className='' onSubmit={handleSubmit(onSubmit)}>
 
+                        <div class="form-control w-full">
+                            <label class="label">
+                                <span class="label-text">Name</span>
+                            </label>
+                            <input
+                                type="text"
+                                placeholder="Your name"
+                                class="input input-bordered w-full"
+                                {...register("name", {
+                                    required: {
+                                        value: true,
+                                        message: 'Name is required'
+                                    }
+                                })}
+                            />
+                            <label className="label">
+                                {errors.name?.type === 'required' && <span className="label-text-alt text-red-500">{errors.name.message}</span>}
+                            </label>
+                        </div>
                         <div class="form-control w-full">
                             <label class="label">
                                 <span class="label-text">Email</span>
@@ -111,9 +130,9 @@ const LogIn = () => {
                             </label>
                         </div>
                         {signInError}
-                        <input className='btn btn-outline bg-neutral hover:bg-secondary text-white w-full' type="submit" value={"LOGIN"} />
+                        <input className='btn btn-outline bg-neutral hover:bg-secondary text-white w-full' type="submit" value={"SIGNUP"} />
 
-                        <p className='text-center pt-6'>Don't have an account? <b><Link className='text-secondary' to={"/signup"}>Register</Link></b></p>
+                        <p className='text-center pt-6'>Already have an account? <b><Link className='text-secondary' to={"/login"}>Login here</Link></b></p>
                     </form>
                 </div>
             </div>
@@ -121,4 +140,4 @@ const LogIn = () => {
     );
 };
 
-export default LogIn;
+export default SignUp;
