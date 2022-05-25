@@ -16,10 +16,13 @@ const Navbar = () => {
         <li><Link to="/">Home</Link></li>
         <li><Link to="/purchase">Purchase</Link></li>
         <li><Link to="/blogs">Blogs</Link></li>
+        {
+            user && <li><Link to={"/dashboard"}>Dashboard</Link></li>
+        }
     </>
     return (
-        <div className="navbar bg-neutral text-white">
-            <div className="navbar-start ml-10">
+        <div className=" flex navbar bg-neutral text-white">
+            <div className=" flex-1 navbar-start lg:ml-40 md:ml-40 sm:ml-0">
                 <div className="dropdown">
                     <label tabIndex="0" className="btn btn-ghost lg:hidden bg-neutral">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
@@ -34,13 +37,18 @@ const Navbar = () => {
                     </ul>
                 </div>
             </div>
-            <div>
+            <div className='flex-1'>
                 <h1 className='text-2xl'>part<span className='text-secondary text-3xl font-bold'>Ex</span></h1>
             </div>
-            <div className="navbar-end mr-10">
-                <button className="btn btn-outline btn-sm mr-1 text-white"><Link to="/signup">Sign up</Link></button>
-                <button className="btn btn-outline btn-sm ml-1 text-white">{user ? <button className='btn btn-ghost btn-sm' onClick={logout}>Sign out</button> : <Link to="/login">Log in</Link>}
-                </button>
+            <div className=" flex-1 navbar-end lg:ml-30 md:ml-30">
+                <label tabIndex="1" for="db-sidebar" className="btn btn-ghost lg:hidden bg-neutral">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <div className='flex'>
+                    <button className="flex-1  btn btn-outline btn-sm mr-3 text-white"><Link to="/signup">Sign up</Link></button>
+                    <button className="flex-1  btn btn-outline btn-sm text-white">{user ? <button className='btn btn-ghost btn-sm' onClick={logout}>Sign out</button> : <Link to="/login">Log in</Link>}
+                    </button>
+                </div>
             </div>
         </div>
     );

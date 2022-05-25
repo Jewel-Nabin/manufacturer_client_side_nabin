@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import auth from '../../firebase.init';
-import MyProfile from './MyProfile';
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useForm } from "react-hook-form";
 import Loading from '../Shared/Loading';

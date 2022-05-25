@@ -19,7 +19,7 @@ const Part = ({ part, setProduct }) => {
                             key={part._id}
                             htmlFor="purchasing-modal"
                             onClick={() => setProduct(part)}
-                            className="btn btn-sm btn-secondary text-white">open modal
+                            className="btn btn-sm btn-secondary text-white uppercase">Buy Now
                         </label>
                     </div>
                 </div>
