@@ -4,10 +4,10 @@ import { toast } from 'react-toastify';
 const UserRow = ({ user, refetch }) => {
     const { email, role } = user;
     const makeAdimin = () => {
-        fetch(`https://peaceful-dawn-98509.herokuapp.com/user/admin${email}`, {
+        fetch(`https://peaceful-dawn-98509.herokuapp.com/user/admin/${email}`, {
             method: 'PUT',
             headers: {
-                'content-type': 'appliction/json'
+                authorization: `Bearer ${localStorage.getItem('accessToken')}`
             }
         })
             .then(res => res.json())
