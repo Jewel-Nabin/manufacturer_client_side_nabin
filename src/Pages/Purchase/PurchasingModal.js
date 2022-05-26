@@ -1,7 +1,7 @@
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
-import { toast, ToastContainer } from 'react-toastify';
+import { toast } from 'react-toastify';
 
 
 const PurchasingModal = ({ product, setProduct }) => {
@@ -10,6 +10,8 @@ const PurchasingModal = ({ product, setProduct }) => {
 
     const handleBuy = event => {
         event.preventDefault();
+        console.log(name);
+        setProduct(null);
 
         const purchasing = {
             productId: _id,
@@ -20,7 +22,7 @@ const PurchasingModal = ({ product, setProduct }) => {
             location: event.target.address.value
         }
 
-        fetch('http://localhost:5000/purchasing', {
+        fetch('https://peaceful-dawn-98509.herokuapp.com/purchasing', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -30,11 +32,12 @@ const PurchasingModal = ({ product, setProduct }) => {
 
             .then(res => res.json())
             .then(data => {
+                toast.success(`Your purchase has been confirmed`);
                 setProduct(null);
             })
     }
 
-    
+
 
     return (
         <div>
@@ -55,11 +58,12 @@ const PurchasingModal = ({ product, setProduct }) => {
                                 <input type="email" name='email' disabled value={user?.email || ''} className="input input-bordered w-full max-w-xs" />
                                 <input type="text" name='phone' placeholder="Phone number" className="input input-bordered w-full max-w-xs" />
                                 <input type="text" name='address' placeholder="Address" className="input input-bordered w-full max-w-xs" />
+                                <input type="submit" value={"Order Confirm"}
+                                className="btn btn-secondary w-full m-2" />
                             </form>
                         </div>
                     </div>
-                    <input type="submit" value={"Order Confirm"} className="btn btn-secondary w-full m-2" />
-                    <ToastContainer />
+                    
                 </div>
             </div>
         </div>
