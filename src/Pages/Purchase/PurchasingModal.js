@@ -58,12 +58,12 @@ const PurchasingModal = ({ product, setProduct }) => {
                                 <input type="email" name='email' disabled value={user?.email || ''} className="input input-bordered w-full max-w-xs" />
                                 <input type="text" name='phone' placeholder="Phone number" className="input input-bordered w-full max-w-xs" />
                                 <input type="text" name='address' placeholder="Address" className="input input-bordered w-full max-w-xs" />
-                                <input type="submit" value={"Order Confirm"}
-                                className="btn btn-secondary w-full m-2" />
+                                <input type="submit" disabled={!user} value={"Order Confirm"}
+                                    className="btn btn-secondary w-full m-2" />
                             </form>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>

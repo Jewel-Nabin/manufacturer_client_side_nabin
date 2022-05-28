@@ -9,7 +9,7 @@ module.exports = {
         partExtheme: {
           primary: "#262626",
           secondary: "#FC5A34",
-          accent: "#FAFAFA",
+          accent: "#42873F",
           neutral: "#2A2C3C",
           "base-100": "#ffffff",
         },

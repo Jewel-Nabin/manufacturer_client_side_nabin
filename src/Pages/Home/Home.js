@@ -1,4 +1,5 @@
 import React from 'react';
+import Review from '../Dashboard/Review';
 import Advantages from './Advantages';
 import Banner from './Banner';
 import Newsletter from './Newsletter';

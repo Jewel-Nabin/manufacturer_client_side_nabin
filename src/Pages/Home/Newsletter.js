@@ -3,7 +3,7 @@ import newsletter2 from '../../assets/images/newsletter2.png';
 
 const Newsletter = () => {
     return (
-        <div className='text-center my-20 mx-5 bg-accent p-10'>
+        <div className='text-center my-20 mx-5 p-10'>
             <img className='mx-auto' src={newsletter2} alt="" />
             <h1 className='mt-2 text-2xl'>Sign up now to receive emails for</h1>
             <h1 className='mt-2 text-2xl'>exclusive offers</h1>

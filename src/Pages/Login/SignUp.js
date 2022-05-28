@@ -44,8 +44,8 @@ const SignUp = () => {
         await createUserWithEmailAndPassword(data.email, data.password);
         await updateProfile({ displayName: data.name });
         console.log('update done');
-
     }
+    
     return (
         <div className='flex min-h-screen justify-center items-center w-full'>
             {/* <MyProfile /> */}

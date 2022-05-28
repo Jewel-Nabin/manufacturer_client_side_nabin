@@ -41,7 +41,8 @@ const MyOrders = () => {
                             <th></th>
                             <th>Name</th>
                             <th>Product</th>
-                            <th>Phone</th>
+                            <th>Cancle</th>
+                            <th>Payment</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -50,7 +51,8 @@ const MyOrders = () => {
                                 <th>{index + 1}</th>
                                 <td>{o.buyerName}</td>
                                 <td>{o.product}</td>
-                                <td>{o.phone}</td>
+                                <td><button class="btn btn-xs">Cancel</button></td>
+                                <td><button class="btn btn-xs">Paid</button></td>
                             </tr>)
                         }
                     </tbody>

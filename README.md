@@ -1,3 +1,20 @@
+* UI Site-Name: partEx
+* Site-Link: Open[https://partex-94f0b.web.app/]
+
+partEx template is designed and created with classy design along with a sophisticated style that brings comfortable feelings for your customers. Using a white background, black text with product names to make highlight product images and information about products.
+
+Let’s elevate your business to another level, starting with this website.
+
+KEY FEATURES OF partEx:
+* Responsive Design- Looks great on desktops, laptops, tablets and mobiles. Give it a try on your iPhone or iPad now.
+* Customer Review Carousel
+* Customer accounts: Customers can register, login, change addresses and view past orders.
+* Newsletter: Easily link your Mailchimp account to the newsletter form.
+* Social Sharing: Share by Twitter, Facebook, and Youtube.
+* Easy Use and Easy Customize
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
